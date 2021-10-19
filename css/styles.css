@@ -251,18 +251,6 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.our-work-list {
-  display: flex;
-}
-
-.our-team-list {
-  display: flex;
-}
-
-.our-work-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .cards-list {
   display: flex;
 
@@ -441,7 +429,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin-bottom: 20px;
 }
 
 .header .container {
@@ -678,6 +665,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -714,4 +702,43 @@ button {
 .modal_close:hover,
 .modal_close:focus {
   color: #2196f3;
+}
+
+.our-work-list {
+  display: flex;
+}
+
+.our-team-list {
+  display: flex;
+}
+
+.our-work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-work-list-item {
+  position: relative;
+  display: flex;
+}
+
+.our-work-list-item_wrapper {
+  width: 100%;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.our-work-list-item_text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
