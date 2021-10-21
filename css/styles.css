@@ -735,7 +735,7 @@ button {
   color: #ffffff;
 }
 
-.card-item-wrapper {
+.card-item_wrapper {
   position: relative;
   overflow: hidden;
 }
@@ -752,7 +752,7 @@ button {
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-text {
+.overlay_text {
   font-weight: normal;
   font-size: 18px;
   line-height: calc(28 / 18);
@@ -760,7 +760,7 @@ button {
   color: #ffffff;
 }
 
-.card-item:hover {
+.card-item_wrapper:hover {
   /* background: #fff;
   border: 1px solid #eee; */
   box-sizing: border-box;
