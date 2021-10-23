@@ -48,12 +48,11 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.nav-link::before {
+.current::before {
   content: "";
   position: absolute;
   width: 48px;
   height: 4px;
-  left: 453px;
   top: 76px;
   background-color: var(--background-color);
   border-radius: 2px;
