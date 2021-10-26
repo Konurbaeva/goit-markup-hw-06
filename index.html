@@ -525,10 +525,66 @@
 
     <div class="backdrop is-hidden" data-modal="">
       <div class="modal">
+        
           <button data-modal-close="" type="button" class="modal-close">
              &#10006;
           </button>
+          <h3>Оставьте свои данные, мы вам перезвоним</h3>
+        <form class="contact-form-hero">
+ <label for="user-name">
+  Имя
+  <svg width="18" height="18" class="contact-form-hero_icon-user-name">
+    <use href="./images/svg/symbol-defs.svg#icon-user-name"> </use>
+    
+                  </svg>
+   <input
+  type="text"
+  name="user-name"
+  class="contact-form-hero_input"
+  required
+  minlength="2"
+ />
+
+</label>
+
+<label for="user-tel">
+  Телефон
+  <svg width="18" height="18" class="contact-form-hero_icon-user-phone">
+    <use href="./images/svg/symbol-defs.svg#icon-user-phone"> </use>
+    </svg>
+  <input
+  type="tel"
+  name="user-tel"
+  class="contact-form-hero_input"
+  required
+ />
+</label>
+
+<label for="user-email">
+  Почта
+  <svg width="18" height="18" class="contact-form-hero_icon-user-email">
+    <use href="./images/svg/symbol-defs.svg#icon-user-email"> </use>
+    </svg>
+  <input
+  type="email"
+  name="user-email"
+  class="contact-form-hero_input"
+  required
+  />
+</label>
+<label for="comment">
+  Комментарий
+  <textarea name="comment" id="comment" placeholder="Введите текст" ></textarea>
+</label>
+
+<input type="checkbox" name="confirmation" value="">Соглашаюсь с рассылкой и принимаю Условия договора<br>
+
+<button type="button" class="contact-form-hero_button">Отправить</button>
+</form>
+
       </div>
+
+    
   </div>
     <script src="./js/modal.js"></script>
   </body>

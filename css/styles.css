@@ -81,6 +81,15 @@ ul {
   color: var(--primary-white-color);
 }
 
+.contact-form-hero_input {
+  width: 448px;
+  height: 58px;
+}
+
+textarea {
+  resize: none;
+}
+
 ul {
   list-style-type: none;
 }
