@@ -537,25 +537,51 @@
       <div class="modal">
         
           <button data-modal-close="" type="button" class="modal-close">
-             &#10006;
+            <svg width="18" height="18">
+              <use href="./images/svg/symbol-defs.svg#icon-close"> </use>
+              </svg>
           </button>
          <form class="form">
           <h2 class="form_title">Оставьте свои данные, мы вам перезвоним</h2>
           <label class="form_title">
             <span class="form_text">Имя</span>
+            <div class="form_wrapper">
             <input type="text" class="form_input" name="user-name"/>
+            <svg  class="form_svg" width="18" height="18">
+              <use href="./images/svg/symbol-defs.svg#icon-user-name"> </use>
+              </svg>
+          </div>
           </label>
           <label class="form_title">
             <span class="form_text">Телефон</span>
+            <div class="form_wrapper">
             <input type="phone" class="form_input" name="user-phone"/>
+            <svg  class="form_svg" width="18" height="18">
+              <use href="./images/svg/symbol-defs.svg#icon-user-phone"> </use>
+              </svg>
+          </div>
           </label>
           <label class="form_title">
             <span class="form_text">Почта</span>
+            <div class="form_wrapper">
             <input type="email" class="form_input" name="user-email"/>
+            <svg  class="form_svg" width="18" height="18">
+              <use href="./images/svg/symbol-defs.svg#icon-user-email"> </use>
+              </svg>
+          </div>
           </label>
           <label class="form_title">
             <span class="form_text">Комментарий</span>
-            <textarea name="user-message" id="user-message"  class="form_textarea"></textarea>
+            <textarea name="user-message" id="user-message"  class="form_textarea" placeholder="Введите текст"></textarea>
+          </label>
+          <label for="checkbox" class="form_label">
+            <input type="checkbox" class="form_checkbox" id="checkbox"/>
+            <span class="form_box-icon">
+              <svg  class="form_icon" width="16" height="15">
+                <use href="./images/svg/symbol-defs.svg#icon-checkbox"> </use>
+                </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю&#160; <a href="#" class="form_link">Условия договора</a>
           </label>
          <button type="submit" class="form_btn">Отправить</button>
          </form>

@@ -854,7 +854,8 @@ svg {
 .form_text {
   text-align: left;
   display: block;
-  font-weight: normal;
+  margin-top: 10px;
+  font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
 
@@ -872,8 +873,18 @@ svg {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  margin-bottom: 10px;
+
   padding: 12px 15px 12px 45px;
+}
+
+.form_textarea:focus,
+.form_textarea:hover,
+.form_input:focus,
+.form_input:hover,
+.form_input:focus + .form_svg,
+.form_input:hover + .form_svg {
+  fill: #2196f3;
+  border-color: #2196f3;
 }
 
 .form_textarea {
@@ -885,7 +896,7 @@ svg {
 .form_btn {
   padding: 10px 56px;
   border-radius: 4px;
-  background: #188ce8;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: bold;
@@ -893,4 +904,71 @@ svg {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: #fff;
+  text-transform: capitalize;
+}
+
+.form_btn:focus,
+.form_btn:hover {
+  background: #188ce8;
+}
+
+.form_label {
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin: 10px 0 30px 0;
+}
+
+.form_checkbox {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: -1px;
+}
+
+.form_box-icon {
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+  border: 1px solid #212121;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.form_link {
+  color: #2196f3;
+  display: inline-block;
+  margin-left: 7px;
+  text-decoration: underline;
+}
+
+.form_checkbox:checked + .form_box-icon {
+  border: none;
+  background: #2196f3;
+
+  border-radius: 2 px;
+  fill: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/svg/check.svg);
+  background-size: contain;
+}
+
+.form_wrapper {
+  position: relative;
+}
+
+.form_svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: #212121;
 }
