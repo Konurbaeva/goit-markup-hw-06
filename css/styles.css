@@ -871,6 +871,11 @@ svg {
   display: block;
   height: 120px;
   padding-left: 15px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form_btn {
